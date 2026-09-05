@@ -48,7 +48,7 @@ if st.button("Generate Email", type="primary"):
 
             with st.spinner("Generating your email..."):
                 response = client.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
+                    model="openai/gpt-oss-120b",
                     messages=[
                         {"role": "system", "content": "You are an expert email generator."},
                         {"role": "user", "content": prompt}
